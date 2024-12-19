@@ -20,7 +20,6 @@ def register_user(email, password):
     return True, "User registered successfully!"
 
 def authenticate_user(email, password):
-    """Authenticate a user based on their credentials."""
     try:
         with open("users.json", "r") as f:
             users = json.load(f)
